@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Rayyan's Portfolio</title>
+        <title>Contact Rayyan</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
@@ -19,10 +19,32 @@
             </ul>
         </header>
 
-        <div id="welcomeMessage">
-            <h3 id="line1"></h3>
-            <h4 id="line2">Welcome to Rayyan's</h4>
-            <h4 id="line3">Portfolio</h4>
+        <h2>Contact Me</h2>
+
+        <div id="formPage">
+            <h3>Feedback/Question Form</h3>
+
+            <form action="mailto:rayyan.malik@ontariotechu.net" method="post" enctype="text/plain" ?subject=Mistakes name="form">
+                <p class="inputSpace">
+                    <label for="name">Your Name</label>
+                    <br>
+                    <input type="text" name="name" placeholder="Your Complete Name" size="48" required>
+                </p>
+                <p class="inputSpace">
+                    <label for="email">Your Email</label>
+                    <br>
+                    <input type="email" name="email" placeholder="Your Email Address" size="48" required>
+                </p>
+                <p class="inputSpace">
+                    <label for="comments">Comments</label>
+                    <br>
+                    <textarea name="email" cols="40" rows="8"></textarea>
+                </p>
+                <p>
+                    <input id="submitBtn" type="submit" value="Click to Submit">
+                </p>
+            </form>
+
         </div>
 
         <footer>

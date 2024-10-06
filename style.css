@@ -7,34 +7,34 @@ body {
 
 header{
     background-color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 150px;
 }
 
 .logo{
     font-size: 32px;
     font-weight: 600;
+    text-align: center;
 }
 
 .navBtn{
+    position: relative;
     display: inline-block;
+    
 }
 
 .navBtn-label{
     position: relative;
     width: 100px;
     height: 50px;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     background-color: black;
     border-radius: 15px;
     color: white;
     font-size: 18px;
     font-weight: 400;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 20px;
     text-decoration: none;
     transition: 0.4s;
 }
@@ -42,3 +42,86 @@ header{
 .navBtn-label:hover{
     background-color: rgba(0, 0, 0, 0.651);
 }
+
+#welcomeMessage{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    font-size: 40px;
+}
+
+#line1::after{
+    content: "";
+    font-weight: 600;
+    font-size: 60px;
+    animation: spellHello 2.5s infinite ease-in;
+}
+
+@keyframes spellHello{
+    0% {content: "H";}
+    20% {content: "He";}
+    40% {content: "Hel";}
+    60% {content: "Hell";}
+    80% {content: "Hello";}
+    100% {content: "Hello!";}
+}
+
+#line2{
+    margin-top: -30px;
+}
+
+#line3{
+    margin-top: -30px;
+}
+
+#aboutMe{
+    position: relative;
+    width: 500px;
+    background-color: silver;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2{
+    margin-left: 20px;
+}
+
+#formPage{
+    background-color: slategray;
+    border-radius: 15px;
+    position: relative;
+    width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    position: relative;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-items: center;
+    font-weight: bold;
+}
+
+.footerBtn{
+    display: inline-block;
+}
+
+.footerBtn-label{
+    color: white;
+    padding: 15px;
+    font-weight: 100;
+}
+
