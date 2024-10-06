@@ -16,10 +16,15 @@ header{
     text-align: center;
 }
 
+#navBtnBlock{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
 .navBtn{
     position: relative;
     display: inline-block;
-    
 }
 
 .navBtn-label{
